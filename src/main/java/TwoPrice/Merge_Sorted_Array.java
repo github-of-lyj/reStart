@@ -10,7 +10,6 @@ public class Merge_Sorted_Array {
      * @Address https://leetcode.cn/problems/merge-sorted-array/
      * @TitleName 88. 合并两个有序数组
      */
-
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int[] result = new int[m+n];
         int num1 = 0,num2 = 0;
@@ -38,5 +37,16 @@ public class Merge_Sorted_Array {
         }
         for (int i = 0;i < m+n;i++)
             nums1[i] = result[i];
+    }
+
+    public void merge_NEW(int[] nums1, int m, int[] nums2, int n) {
+        int num1 = m - 1;
+        int num2 = n - 1;
+        int key = m + n - 1;
+        while (num1 >= 0 && num2 >= 0)
+            nums1[key--] = nums1[num1] > nums2[num2] ?  nums1[num1--]:nums2[num2--];
+        while (num2 >= 0)
+            nums1[key--] = nums2[num2--];
+
     }
 }
