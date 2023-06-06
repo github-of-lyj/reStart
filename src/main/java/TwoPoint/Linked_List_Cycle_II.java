@@ -1,4 +1,4 @@
-package TwoPrice;
+package TwoPoint;
 
 
 class ListNode {

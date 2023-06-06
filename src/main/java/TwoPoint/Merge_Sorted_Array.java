@@ -1,4 +1,4 @@
-package TwoPrice;
+package TwoPoint;
 
 public class Merge_Sorted_Array {
     /*

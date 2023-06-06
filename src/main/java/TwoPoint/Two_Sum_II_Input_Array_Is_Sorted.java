@@ -1,4 +1,4 @@
-package TwoPrice;
+package TwoPoint;
 
 public class Two_Sum_II_Input_Array_Is_Sorted {
     public int[] twoSum(int[] numbers, int target) {

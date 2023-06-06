@@ -1,4 +1,4 @@
-package TwoPrice;
+package TwoPoint;
 
 import java.util.HashMap;
 import java.util.Map;
