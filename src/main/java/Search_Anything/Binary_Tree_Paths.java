@@ -12,9 +12,11 @@ class TreeNode {
     TreeNode right;
     TreeNode() {
     }
+
     TreeNode(int val) {
         this.val = val;
     }
+
     TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
         this.left = left;
@@ -23,15 +25,6 @@ class TreeNode {
 }
 
 public class Binary_Tree_Paths {
-    /*
-     * @author 林英杰
-     * @since JDK 版本 1.8++
-     * @Method binaryTreePaths：输出二叉树中所有从根到叶子的路径
-     * @param TreeNode root：根节点
-     * @return List<String> result：路径集合
-     * @Address https://leetcode.cn/problems/binary-tree-paths/description/
-     * @TitleName 257. 二叉树的所有路径
-     */
     public List<String> binaryTreePaths(TreeNode root) {
         //路径结果集合 result 以及 某一可能结果 oneResult
         List<String> result = new ArrayList<>();
@@ -61,5 +54,4 @@ public class Binary_Tree_Paths {
         dfs(root.left,result,temp);
         dfs(root.right,result,temp);
     }
-
 }
